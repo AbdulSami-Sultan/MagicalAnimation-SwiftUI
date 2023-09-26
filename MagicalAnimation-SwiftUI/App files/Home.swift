@@ -11,7 +11,7 @@ struct Home: View {
 
     
     let animationList = [
-            "Waves Animation",
+            "Waves",
             "Pulse"
         ]
     
@@ -19,19 +19,23 @@ struct Home: View {
         
         NavigationStack {
             List(animationList, id: \.self) { animation in
-                if animation == "Waves Animation"{
-                    NavigationLink(animation) {
-                        WavesAnimation()
-                    }
-                }else{
-                    NavigationLink(animation, value: animation)
+                switch animation{
+                case "Waves":
+                    NavigationLink(animation) { WavesAnimation() }
+                case "Pulse":
+                    NavigationLink(animation) { Pulse() }
+                default:
+                    NavigationLink(animation) { Pulse() }
                 }
-                
             }
-            .navigationTitle("Select a Animation")
+            .navigationTitle("Select Animation")
         }
 
         
+    }
+    
+    enum AnimationList: String, CaseIterable{
+        case Waves, Pulse
     }
 }
 

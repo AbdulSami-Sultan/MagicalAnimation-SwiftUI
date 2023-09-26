@@ -12,6 +12,7 @@
 		26E944322AC1E63C00E15373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E944312AC1E63C00E15373 /* Assets.xcassets */; };
 		26E944352AC1E63C00E15373 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E944342AC1E63C00E15373 /* Preview Assets.xcassets */; };
 		26E9443F2AC1E6D800E15373 /* WavesAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E9443E2AC1E6D800E15373 /* WavesAnimation.swift */; };
+		26E944422AC31FED00E15373 /* Pulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E944412AC31FED00E15373 /* Pulse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		26E944312AC1E63C00E15373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26E944342AC1E63C00E15373 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		26E9443E2AC1E6D800E15373 /* WavesAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavesAnimation.swift; sourceTree = "<group>"; };
+		26E944412AC31FED00E15373 /* Pulse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		26E9443C2AC1E6BF00E15373 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				26E944402AC31FD800E15373 /* PulseAnimation */,
 				26E9443D2AC1E6C700E15373 /* WavesAnimation */,
 			);
 			path = Animations;
@@ -92,6 +95,14 @@
 				26E9443E2AC1E6D800E15373 /* WavesAnimation.swift */,
 			);
 			path = WavesAnimation;
+			sourceTree = "<group>";
+		};
+		26E944402AC31FD800E15373 /* PulseAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				26E944412AC31FED00E15373 /* Pulse.swift */,
+			);
+			path = PulseAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 				26E9443F2AC1E6D800E15373 /* WavesAnimation.swift in Sources */,
 				26E944302AC1E63B00E15373 /* Home.swift in Sources */,
 				26E9442E2AC1E63B00E15373 /* MagicalAnimation_SwiftUIApp.swift in Sources */,
+				26E944422AC31FED00E15373 /* Pulse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
