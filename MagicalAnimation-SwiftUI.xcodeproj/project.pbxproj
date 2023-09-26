@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26096E6E2AC3258E001B7ABC /* ClockTickingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26096E6D2AC3258E001B7ABC /* ClockTickingAnimation.swift */; };
 		26E9442E2AC1E63B00E15373 /* MagicalAnimation_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E9442D2AC1E63B00E15373 /* MagicalAnimation_SwiftUIApp.swift */; };
 		26E944302AC1E63B00E15373 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E9442F2AC1E63B00E15373 /* Home.swift */; };
 		26E944322AC1E63C00E15373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E944312AC1E63C00E15373 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26096E6D2AC3258E001B7ABC /* ClockTickingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTickingAnimation.swift; sourceTree = "<group>"; };
 		26E9442A2AC1E63B00E15373 /* MagicalAnimation-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MagicalAnimation-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E9442D2AC1E63B00E15373 /* MagicalAnimation_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicalAnimation_SwiftUIApp.swift; sourceTree = "<group>"; };
 		26E9442F2AC1E63B00E15373 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -36,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26096E6C2AC32570001B7ABC /* ClockTickingAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				26096E6D2AC3258E001B7ABC /* ClockTickingAnimation.swift */,
+			);
+			path = ClockTickingAnimation;
+			sourceTree = "<group>";
+		};
 		26E944212AC1E63B00E15373 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 		26E9443C2AC1E6BF00E15373 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				26096E6C2AC32570001B7ABC /* ClockTickingAnimation */,
 				26E944402AC31FD800E15373 /* PulseAnimation */,
 				26E9443D2AC1E6C700E15373 /* WavesAnimation */,
 			);
@@ -176,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26E9443F2AC1E6D800E15373 /* WavesAnimation.swift in Sources */,
+				26096E6E2AC3258E001B7ABC /* ClockTickingAnimation.swift in Sources */,
 				26E944302AC1E63B00E15373 /* Home.swift in Sources */,
 				26E9442E2AC1E63B00E15373 /* MagicalAnimation_SwiftUIApp.swift in Sources */,
 				26E944422AC31FED00E15373 /* Pulse.swift in Sources */,

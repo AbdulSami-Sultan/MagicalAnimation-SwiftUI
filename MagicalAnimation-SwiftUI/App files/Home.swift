@@ -12,7 +12,8 @@ struct Home: View {
     
     let animationList = [
             "Waves",
-            "Pulse"
+            "Pulse",
+            "Clock Ticking"
         ]
     
     var body: some View {
@@ -24,6 +25,8 @@ struct Home: View {
                     NavigationLink(animation) { WavesAnimation() }
                 case "Pulse":
                     NavigationLink(animation) { Pulse() }
+                case "Clock Ticking":
+                    NavigationLink(animation) { ClockTickingAnimation() }
                 default:
                     NavigationLink(animation) { Pulse() }
                 }
