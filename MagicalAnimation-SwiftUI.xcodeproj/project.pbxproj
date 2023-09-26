@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		26096E6E2AC3258E001B7ABC /* ClockTickingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26096E6D2AC3258E001B7ABC /* ClockTickingAnimation.swift */; };
+		26096E712AC32AA5001B7ABC /* DisLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26096E702AC32AA5001B7ABC /* DisLoading.swift */; };
 		26E9442E2AC1E63B00E15373 /* MagicalAnimation_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E9442D2AC1E63B00E15373 /* MagicalAnimation_SwiftUIApp.swift */; };
 		26E944302AC1E63B00E15373 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E9442F2AC1E63B00E15373 /* Home.swift */; };
 		26E944322AC1E63C00E15373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E944312AC1E63C00E15373 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		26096E6D2AC3258E001B7ABC /* ClockTickingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTickingAnimation.swift; sourceTree = "<group>"; };
+		26096E702AC32AA5001B7ABC /* DisLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisLoading.swift; sourceTree = "<group>"; };
 		26E9442A2AC1E63B00E15373 /* MagicalAnimation-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MagicalAnimation-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E9442D2AC1E63B00E15373 /* MagicalAnimation_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicalAnimation_SwiftUIApp.swift; sourceTree = "<group>"; };
 		26E9442F2AC1E63B00E15373 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 				26096E6D2AC3258E001B7ABC /* ClockTickingAnimation.swift */,
 			);
 			path = ClockTickingAnimation;
+			sourceTree = "<group>";
+		};
+		26096E6F2AC32A8C001B7ABC /* DiskLoadingAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				26096E702AC32AA5001B7ABC /* DisLoading.swift */,
+			);
+			path = DiskLoadingAnimation;
 			sourceTree = "<group>";
 		};
 		26E944212AC1E63B00E15373 = {
@@ -93,6 +103,7 @@
 		26E9443C2AC1E6BF00E15373 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				26096E6F2AC32A8C001B7ABC /* DiskLoadingAnimation */,
 				26096E6C2AC32570001B7ABC /* ClockTickingAnimation */,
 				26E944402AC31FD800E15373 /* PulseAnimation */,
 				26E9443D2AC1E6C700E15373 /* WavesAnimation */,
@@ -187,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26E9443F2AC1E6D800E15373 /* WavesAnimation.swift in Sources */,
+				26096E712AC32AA5001B7ABC /* DisLoading.swift in Sources */,
 				26096E6E2AC3258E001B7ABC /* ClockTickingAnimation.swift in Sources */,
 				26E944302AC1E63B00E15373 /* Home.swift in Sources */,
 				26E9442E2AC1E63B00E15373 /* MagicalAnimation_SwiftUIApp.swift in Sources */,
