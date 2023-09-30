@@ -14,27 +14,53 @@ struct Home: View {
             "Waves",
             "Pulse",
             "Clock Ticking",
-            "Disk Loading"
+            "Disk Loading",
+            "Sticky Headers"
         ]
     
     var body: some View {
         
-        NavigationStack {
-            List(animationList, id: \.self) { animation in
-                switch animation{
-                case "Waves":
-                    NavigationLink(animation) { WavesAnimation() }
-                case "Pulse":
-                    NavigationLink(animation) { Pulse() }
-                case "Clock Ticking":
-                    NavigationLink(animation) { ClockTickingAnimation() }
-                case "Disk Loading":
-                    NavigationLink(animation) { DisLoading() }
-                default:
-                    NavigationLink(animation) { Pulse() }
+        if #available(iOS 16.0, *) {
+            NavigationStack {
+                List(animationList, id: \.self) { animation in
+                    switch animation{
+                    case "Waves":
+                        NavigationLink(animation) { WavesAnimation() }
+                    case "Pulse":
+                        NavigationLink(animation) { Pulse() }
+                    case "Clock Ticking":
+                        NavigationLink(animation) { ClockTickingAnimation() }
+                    case "Disk Loading":
+                        NavigationLink(animation) { DisLoading() }
+                    case "Sticky Headers":
+                        NavigationLink(animation) { StickyHeader() }
+                    default:
+                        NavigationLink(animation) { Pulse() }
+                    }
                 }
+                .navigationTitle("Select Animation")
             }
-            .navigationTitle("Select Animation")
+        } else {
+            // Fallback on earlier versions
+            NavigationView{
+                List(animationList, id: \.self) { animation in
+                    switch animation{
+                    case "Waves":
+                        NavigationLink(animation) { WavesAnimation() }
+                    case "Pulse":
+                        NavigationLink(animation) { Pulse() }
+                    case "Clock Ticking":
+                        NavigationLink(animation) { ClockTickingAnimation() }
+                    case "Disk Loading":
+                        NavigationLink(animation) { DisLoading() }
+                    case "Sticky Headers":
+                        NavigationLink(animation) { StickyHeader() }
+                    default:
+                        NavigationLink(animation) { Pulse() }
+                    }
+                }
+                .navigationTitle("Select Animation")
+            }
         }
 
         

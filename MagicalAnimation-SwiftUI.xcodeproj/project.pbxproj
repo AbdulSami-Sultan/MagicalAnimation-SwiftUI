@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		26096E6E2AC3258E001B7ABC /* ClockTickingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26096E6D2AC3258E001B7ABC /* ClockTickingAnimation.swift */; };
 		26096E712AC32AA5001B7ABC /* DisLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26096E702AC32AA5001B7ABC /* DisLoading.swift */; };
+		269C1D962AC8068300508317 /* StickyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269C1D952AC8068300508317 /* StickyHeader.swift */; };
 		26E9442E2AC1E63B00E15373 /* MagicalAnimation_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E9442D2AC1E63B00E15373 /* MagicalAnimation_SwiftUIApp.swift */; };
 		26E944302AC1E63B00E15373 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E9442F2AC1E63B00E15373 /* Home.swift */; };
 		26E944322AC1E63C00E15373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E944312AC1E63C00E15373 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		26096E6D2AC3258E001B7ABC /* ClockTickingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTickingAnimation.swift; sourceTree = "<group>"; };
 		26096E702AC32AA5001B7ABC /* DisLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisLoading.swift; sourceTree = "<group>"; };
+		269C1D952AC8068300508317 /* StickyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeader.swift; sourceTree = "<group>"; };
 		26E9442A2AC1E63B00E15373 /* MagicalAnimation-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MagicalAnimation-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E9442D2AC1E63B00E15373 /* MagicalAnimation_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicalAnimation_SwiftUIApp.swift; sourceTree = "<group>"; };
 		26E9442F2AC1E63B00E15373 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 				26096E702AC32AA5001B7ABC /* DisLoading.swift */,
 			);
 			path = DiskLoadingAnimation;
+			sourceTree = "<group>";
+		};
+		269C1D942AC8066000508317 /* StickyHeader */ = {
+			isa = PBXGroup;
+			children = (
+				269C1D952AC8068300508317 /* StickyHeader.swift */,
+			);
+			path = StickyHeader;
 			sourceTree = "<group>";
 		};
 		26E944212AC1E63B00E15373 = {
@@ -103,6 +113,7 @@
 		26E9443C2AC1E6BF00E15373 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				269C1D942AC8066000508317 /* StickyHeader */,
 				26096E6F2AC32A8C001B7ABC /* DiskLoadingAnimation */,
 				26096E6C2AC32570001B7ABC /* ClockTickingAnimation */,
 				26E944402AC31FD800E15373 /* PulseAnimation */,
@@ -197,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269C1D962AC8068300508317 /* StickyHeader.swift in Sources */,
 				26E9443F2AC1E6D800E15373 /* WavesAnimation.swift in Sources */,
 				26096E712AC32AA5001B7ABC /* DisLoading.swift in Sources */,
 				26096E6E2AC3258E001B7ABC /* ClockTickingAnimation.swift in Sources */,
@@ -337,8 +349,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,8 +379,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
